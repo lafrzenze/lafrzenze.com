@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>觉夏の的歌单</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.autocomplete.js" type="text/javascript"></script>
+</head>
+<style>
+    li,
+    ul {
+        margin: auto 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    div {
+        color: rgb(239, 154, 154);
+    }
+
+    body {
+        background-color: rgb(255, 234, 234);
+    }
+
+    hr {
+        width: 100%;
+        height: 0.1rem;
+        margin: 5px auto;
+        background-color: #fff;
+    }
+
+    .ll {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .ll>.btn {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        align-items: center;
+    }
+    input{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <h2>觉夏の的歌单</h2>
+        <div class="ll">
+            <input id="sr" type="text" class="form-control" placeholder="请输入你要的结果" value="">
+            <input id="mochu" class="btn btn-default" type="button" value="搜索">
+        </div>
+        <form>
+            <div class="text-center">
+                <ul>
+                    <li>
+                        <h3>◆ 。︵❉﹏日 语 歌 单﹏❉︵ 。◆</h3>
+                    </li>
+                    <hr>
+                    <li>❀ 恋 ❀</li>
+                    <hr>
+                    <li>❀ 鼻声 ❀</li>
+                    <hr>
+                    <li>❀ 心做し ❀</li>
+                    <hr>
+                    <li>❀ 鳥の詩 ❀</li>
+                    <hr>
+                    <li>❀ 未来へ ❀</li>
+                    <hr>
+                    <li>❀ 打上花火 ❀</li>
+                    <hr>
+                    <li>❀ Lemon ❀</li>
+                    <hr>
+                    <li>❀ 奏（かなで） ❀</li>
+                    <hr>
+                    <li>❀ 風になる ❀</li>
+                    <hr>
+                    <li>❀ 美しきもの ❀</li>
+                    <hr>
+                    <li>❀ 四季折の羽 ❀</li>
+                    <hr>
+                    <li>❀ 君色に染まる ❀</li>
+                    <hr>
+                    <li>❀ 吉原ラメント ❀</li>
+                    <hr>
+                    <li>❀ 砂塵の彼方へ ❀</li>
+                    <hr>
+                    <li>❀ 小さな恋のうた ❀</li>
+                    <hr>
+                    <li>❀ 弱虫モンブラン ❀</li>
+                    <hr>
+                    <li>❀ からくりピエロ ❀</li>
+                    <hr>
+                    <li>❀ さよならのかわりに ❀</li>
+                    <hr>
+                    <li>❀ 世界は恋に落ちている ❀</li>
+                    <hr>
+                    <li>❀ 僕らの手には何もないけど、 ❀</li>
+                    <hr>
+                    <li>
+                        <h3>◆ 。︵❉﹏中 文 歌 单﹏❉︵ 。◆</h3>
+                    </li>
+                    <hr>
+                    <li> │ ❤．字 母 B ．❤ │</li>
+                    <li> ❀ 不分手的恋爱 ❀</li>
+                    <hr>
+                    <li>│ ❤．字 母 D ．❤ │</li>
+                    <li>❀ 第三十八年夏至 ❀</li>
+                    <li>❀ 大鱼 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 H ．❤ │</li>
+                    <li>❀ 荷塘月色（绝活） ❀</li>
+                    <li>❀ 后会无期 ❀</li>
+                    <li>❀ 胡萝卜须 ❀</li>
+                    <hr>
+                    <li>│ ❤．字 母 J ．❤ │</li>
+                    <li>❀ 酒醉的蝴蝶（绝活） ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 L ．❤ │</li>
+                    <li>❀ 两只蝴蝶 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 M ．❤ │</li>
+                    <li>❀ 梦的光点 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 N ．❤ │</li>
+                    <li>❀ 你若成风 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 Q ．❤ │</li>
+                    <li>❀ 芊芊 ❀</li>
+                    <li>❀ 千鸟与目黑 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 W ．❤ │</li>
+                    <li>❀ 我的意中人 ❀</li>
+                    <li>❀ 我还没有男朋友（绝活） ❀</li>
+                    <li>❀ 威风堂堂的恋爱裁判在东北玩泥巴 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 X ．❤ │</li>
+                    <li>❀ 小幸运 ❀</li>
+                    <hr>
+                    <li> │ ❤．字 母 Y ．❤ │</li>
+                    <li>❀ 遇见 ❀</li>
+                    <li>❀ 有点甜 ❀</li>
+                    <li>❀ 一笑倾城 ❀</li>
+                    <li>❀ 一眼云烟 ❀</li>
+                    <hr>
+                    <li>│ ❤．字 母 Z ．❤ │</li>
+                    <li>❀ 怎样 ❀</li>
+                    <li>❀ 追光者 ❀</li>
+                    <hr>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <script>
+        //判断
+        var btn = document.getElementById("mochu");
+        btn.onclick = function () {
+            var text = document.getElementById("sr").value;
+            switch (text) {
+                case "追光者":
+                    alert("已收录");
+                    break;
+                case "怎样":
+                    alert("已收录");
+                    break;
+                case "一眼云烟":
+                    alert("已收录");
+                    break;
+                case "一笑倾城":
+                    alert("已收录");
+                    break;
+                case "有点甜":
+                    alert("已收录");
+                    break;
+                case "遇见":
+                    alert("已收录");
+                    break;
+                case "小幸运":
+                    alert("已收录");
+                    break;
+                case "威风堂堂的恋爱裁判在东北玩泥巴":
+                    alert("已收录");
+                    break;
+                case "我还没有男朋友":
+                    alert("已收录");
+                    break;
+                case "我的意中人":
+                    alert("已收录");
+                    break;
+                case "千鸟与目黑":
+                    alert("已收录");
+                    break;
+                case "芊芊":
+                    alert("已收录");
+                    break;
+                case "你若成风":
+                    alert("已收录");
+                    break;
+                case "梦的光点":
+                    alert("已收录");
+                    break;
+                case "两只蝴蝶":
+                    alert("已收录");
+                    break;
+                case "酒醉的蝴蝶":
+                    alert("已收录");
+                    break;
+                case "胡萝卜须":
+                    alert("已收录");
+                    break;
+                case "后会无期":
+                    alert("已收录");
+                    break;
+                case "荷塘月色":
+                    alert("已收录");
+                    break;
+                case "大鱼":
+                    alert("已收录");
+                    break;
+                case "第三十八年夏至":
+                    alert("已收录");
+                    break;
+                case "不分手的恋爱":
+                    alert("已收录");
+                    break;
+                case "僕らの手には何もないけど、":
+                    alert("已收录");
+                    break;
+                case "世界は恋に落ちている":
+                    alert("已收录");
+                    break;
+                case "さよならのかわりに":
+                    alert("已收录");
+                    break;
+                case "からくりピエロ":
+                    alert("已收录");
+                    break;
+                case "弱虫モンブラン":
+                    alert("已收录");
+                    break;
+                case "小さな恋のうた":
+                    alert("已收录");
+                    break;
+                case "砂塵の彼方へ":
+                    alert("已收录");
+                    break;
+                case "吉原ラメント":
+                    alert("已收录");
+                    break;
+                case "君色に染まる":
+                    alert("已收录");
+                    break;
+                case "四季折の羽":
+                    alert("已收录");
+                    break;
+                case "美しきもの":
+                    alert("已收录");
+                    break;
+                case "風になる":
+                    alert("已收录");
+                    break;
+                case "奏（かなで）":
+                    alert("已收录");
+                    break;
+                case "Lemon":
+                    alert("已收录");
+                    break;
+                case "打上花火":
+                    alert("已收录");
+                    break;
+                case "未来へ":
+                    alert("已收录");
+                    break;
+                case "鳥の詩":
+                    alert("已收录");
+                    break;
+                case "心做し":
+                    alert("已收录");
+                    break;
+                case "鼻声":
+                    alert("已收录");
+                    break;
+                case "恋":
+                    alert("已收录");
+                    break;
+
+                default: alert("未收录");
+            };
+        };
+    </script>
+</body>
+
+</html>
