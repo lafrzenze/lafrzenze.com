@@ -55,7 +55,8 @@
         text-align: center;
         align-items: center;
     }
-    input{
+
+    input {
         text-align: center;
     }
 </style>
@@ -64,7 +65,7 @@
     <div class="container-fluid">
         <h2>觉夏の的歌单</h2>
         <div class="ll">
-            <input id="sr" type="text" class="form-control" placeholder="请输入你要的结果" value="">
+            <input id="sr" type="text" class="form-control" placeholder="请输入完整歌名" onblur="recs(this)">
             <input id="mochu" class="btn btn-default" type="button" value="搜索">
         </div>
         <form>
@@ -169,141 +170,147 @@
         </form>
     </div>
     <script>
+        function recs(obj){
+            obj.value = obj.value.replace(/\s/gi, '');
+        };
         //判断
         var btn = document.getElementById("mochu");
         btn.onclick = function () {
             var text = document.getElementById("sr").value;
-            switch (text.trim()) {
-                case "追光者":
-                    alert("已收录");
-                    break;
-                case "怎样":
-                    alert("已收录");
-                    break;
-                case "一眼云烟":
-                    alert("已收录");
-                    break;
-                case "一笑倾城":
-                    alert("已收录");
-                    break;
-                case "有点甜":
-                    alert("已收录");
-                    break;
-                case "遇见":
-                    alert("已收录");
-                    break;
-                case "小幸运":
-                    alert("已收录");
-                    break;
-                case "威风堂堂的恋爱裁判在东北玩泥巴":
-                    alert("已收录");
-                    break;
-                case "我还没有男朋友":
-                    alert("已收录");
-                    break;
-                case "我的意中人":
-                    alert("已收录");
-                    break;
-                case "千鸟与目黑":
-                    alert("已收录");
-                    break;
-                case "芊芊":
-                    alert("已收录");
-                    break;
-                case "你若成风":
-                    alert("已收录");
-                    break;
-                case "梦的光点":
-                    alert("已收录");
-                    break;
-                case "两只蝴蝶":
-                    alert("已收录");
-                    break;
-                case "酒醉的蝴蝶":
-                    alert("已收录");
-                    break;
-                case "胡萝卜须":
-                    alert("已收录");
-                    break;
-                case "后会无期":
-                    alert("已收录");
-                    break;
-                case "荷塘月色":
-                    alert("已收录");
-                    break;
-                case "大鱼":
-                    alert("已收录");
-                    break;
-                case "第三十八年夏至":
-                    alert("已收录");
-                    break;
-                case "不分手的恋爱":
-                    alert("已收录");
-                    break;
-                case "僕らの手には何もないけど、":
-                    alert("已收录");
-                    break;
-                case "世界は恋に落ちている":
-                    alert("已收录");
-                    break;
-                case "さよならのかわりに":
-                    alert("已收录");
-                    break;
-                case "からくりピエロ":
-                    alert("已收录");
-                    break;
-                case "弱虫モンブラン":
-                    alert("已收录");
-                    break;
-                case "小さな恋のうた":
-                    alert("已收录");
-                    break;
-                case "砂塵の彼方へ":
-                    alert("已收录");
-                    break;
-                case "吉原ラメント":
-                    alert("已收录");
-                    break;
-                case "君色に染まる":
-                    alert("已收录");
-                    break;
-                case "四季折の羽":
-                    alert("已收录");
-                    break;
-                case "美しきもの":
-                    alert("已收录");
-                    break;
-                case "風になる":
-                    alert("已收录");
-                    break;
-                case "奏（かなで）":
-                    alert("已收录");
-                    break;
-                case "Lemon":
-                    alert("已收录");
-                    break;
-                case "打上花火":
-                    alert("已收录");
-                    break;
-                case "未来へ":
-                    alert("已收录");
-                    break;
-                case "鳥の詩":
-                    alert("已收录");
-                    break;
-                case "心做し":
-                    alert("已收录");
-                    break;
-                case "鼻声":
-                    alert("已收录");
-                    break;
-                case "恋":
-                    alert("已收录");
-                    break;
+                switch (text) {
+                    case "追光者":
+                        alert("已收录");
+                        break;
+                    case "怎样":
+                        alert("已收录");
+                        break;
+                    case "一眼云烟":
+                        alert("已收录");
+                        break;
+                    case "一笑倾城":
+                        alert("已收录");
+                        break;
+                    case "有点甜":
+                        alert("已收录");
+                        break;
+                    case "遇见":
+                        alert("已收录");
+                        break;
+                    case "小幸运":
+                        alert("已收录");
+                        break;
+                    case "威风堂堂的恋爱裁判在东北玩泥巴":
+                        alert("已收录");
+                        break;
+                    case "我还没有男朋友":
+                        alert("已收录");
+                        break;
+                    case "我的意中人":
+                        alert("已收录");
+                        break;
+                    case "千鸟与目黑":
+                        alert("已收录");
+                        break;
+                    case "芊芊":
+                        alert("已收录");
+                        break;
+                    case "你若成风":
+                        alert("已收录");
+                        break;
+                    case "梦的光点":
+                        alert("已收录");
+                        break;
+                    case "两只蝴蝶":
+                        alert("已收录");
+                        break;
+                    case "酒醉的蝴蝶":
+                        alert("已收录");
+                        break;
+                    case "胡萝卜须":
+                        alert("已收录");
+                        break;
+                    case "后会无期":
+                        alert("已收录");
+                        break;
+                    case "荷塘月色":
+                        alert("已收录");
+                        break;
+                    case "大鱼":
+                        alert("已收录");
+                        break;
+                    case "第三十八年夏至":
+                        alert("已收录");
+                        break;
+                    case "不分手的恋爱":
+                        alert("已收录");
+                        break;
+                    case "僕らの手には何もないけど、":
+                        alert("已收录");
+                        break;
+                    case "世界は恋に落ちている":
+                        alert("已收录");
+                        break;
+                    case "さよならのかわりに":
+                        alert("已收录");
+                        break;
+                    case "からくりピエロ":
+                        alert("已收录");
+                        break;
+                    case "弱虫モンブラン":
+                        alert("已收录");
+                        break;
+                    case "小さな恋のうた":
+                        alert("已收录");
+                        break;
+                    case "砂塵の彼方へ":
+                        alert("已收录");
+                        break;
+                    case "吉原ラメント":
+                        alert("已收录");
+                        break;
+                    case "君色に染まる":
+                        alert("已收录");
+                        break;
+                    case "四季折の羽":
+                        alert("已收录");
+                        break;
+                    case "美しきもの":
+                        alert("已收录");
+                        break;
+                    case "風になる":
+                        alert("已收录");
+                        break;
+                    case "奏（かなで）":
+                        alert("已收录");
+                        break;
+                    case "Lemon":
+                        alert("已收录");
+                        break;
+                    case "lemon":
+                        alert("已收录");
+                        break;
+                    case "打上花火":
+                        alert("已收录");
+                        break;
+                    case "未来へ":
+                        alert("已收录");
+                        break;
+                    case "鳥の詩":
+                        alert("已收录");
+                        break;
+                    case "心做し":
+                        alert("已收录");
+                        break;
+                    case "鼻声":
+                        alert("已收录");
+                        break;
+                    case "恋":
+                        alert("已收录");
+                        break;
 
-                default: alert("未收录");
+                    default: alert("未收录");
+                };
             };
-        };
     </script>
 </body>
 
