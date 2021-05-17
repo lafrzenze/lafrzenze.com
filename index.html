@@ -173,7 +173,7 @@
         var btn = document.getElementById("mochu");
         btn.onclick = function () {
             var text = document.getElementById("sr").value;
-            switch (Trim(text)) {
+            switch (text.trim()) {
                 case "追光者":
                     alert("已收录");
                     break;
